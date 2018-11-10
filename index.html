@@ -6,11 +6,11 @@
             function validasi(){
                 var npm = document.getElementById('npm');
                 var nama = document.getElementById('nama');
-                var kelas = document.getElementById('kelas');
+                var kelas = document.getElementById('tanggal lahir');
  
                 if (harusDiisi(npm, "npm belum diisi")) {
                     if (harusDiisi(nama, "nama belum diisi")) {
-                        if (harusDiisi(kelas, "kelas belum diisi")) {
+                        if (harusDiisi(tanggal lahir, "tanggal lahir belum diisi")) {
                             return true;
                         };
                     };
@@ -38,7 +38,7 @@
       <th scope="col-2">#</th>
       <th scope="col-2">NPM</th>
       <th scope="col-2">Nama</th>
-      <th scope="col-2">Kelas</th>
+      <th scope="col-2">Tanggal Lahir</th>
     </tr>
   </thead>
   <tbody>
@@ -73,7 +73,7 @@
 <form id="absensi" onsubmit="return validasi()" action="simpan.php" method="post">
             <p>NPM:</p><input type="text" name="nim" id="npm"/><br/>
             <p>Nama:</p><input type="text" name="nama" id="nama"/><br/>
-            <p>Kelas:</p><input type="text" name="kelas" id="kelas"/><br/>
+            <p>Tanggal Lahir:</p><input type="text" name="Tanggal Lahir" id="Tanggal Lahir"/><br/>
             <input type="submit" value="Simpan" maxlength="100"/>
         </form>
 </html>
